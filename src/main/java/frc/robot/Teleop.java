@@ -26,6 +26,7 @@ import frc.robot.*;
  * Add your docs here.
  */
 public class Teleop {
+  // calls funtion of periotic when you run teleop periodic
     public static void Periodic(){
       Scheduler.getInstance().run();
     OI.drive.arcadeDrive(-OI.controller.getRawAxis(1), -OI.controller.getRawAxis(4));
