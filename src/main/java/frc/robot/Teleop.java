@@ -18,6 +18,7 @@ import edu.wpi.first.wpilibj.PowerDistributionPanel;
 import edu.wpi.first.wpilibj.Relay;
 import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.SpeedControllerGroup;
+import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import frc.robot.OI;
 import frc.robot.*;
@@ -26,16 +27,17 @@ import frc.robot.*;
  */
 public class Teleop {
     public static void Periodic(){
-        OI.drive.arcadeDrive(-OI.controllearcadeDriver.getRawAxis(1), -OI.controller.getRawAxis(4));
-        if(OI.pressureSwitch.get() == false) {
-            OI.compressorSpike.set(Relay.Value.kOn);
-          } else {
-            OI.compressorSpike.set(Relay.Value.kOn);
-          }
-          if(OI.controller.getRawAxis(3) != 0) {
-            OI.shiftSolenoid.set(DoubleSolenoid.Value.kForward);
-            } else {
-            OI.shiftSolenoid.set(DoubleSolenoid.Value.kReverse);
-            }
+      Scheduler.getInstance().run();
+    OI.drive.arcadeDrive(-OI.controller.getRawAxis(1), -OI.controller.getRawAxis(4));
+    if(OI.pressureSwitch.get() == false) {
+      OI.compressorSpike.set(Relay.Value.kOn);
+    } else {
+      OI.compressorSpike.set(Relay.Value.kOn);
     }
+    if(OI.controller.getRawAxis(3) != 0) {
+      OI.shiftSolenoid.set(DoubleSolenoid.Value.kForward);
+      } else {
+      OI.shiftSolenoid.set(DoubleSolenoid.Value.kReverse);
+    }
+  }
 }
