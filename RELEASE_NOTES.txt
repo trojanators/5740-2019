@@ -636,7 +636,7 @@ HERO Beta SDK 4.4.0.24 Installer
 HERO Beta SDK 4.4.0.23 Installer
 	Rebuild for testing.
 HERO Beta SDK 4.4.0.22 Installer
-	Updated Analog Input and Serial example to use the HERO IO constants.
+	Updated Analog Input and Serial example to use the HERO IO OI.
 	USB Drivers uninstalled/reinstalled every time setup runs.
 HERO Beta SDK 4.4.0.21 Installer
 	Requirements: HERO must be updated to hero_netmf_beta-0.9.7.0.crf

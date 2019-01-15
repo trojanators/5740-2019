@@ -16,6 +16,7 @@ import com.ctre.phoenix.motorcontrol.can.WPI_VictorSPX;
 
 import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
+import edu.wpi.first.wpilibj.Encoder;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.PowerDistributionPanel;
 import edu.wpi.first.wpilibj.Relay;
@@ -40,4 +41,8 @@ public class OI {
   public static Relay compressorSpike = new Relay(RobotMap.compressorSpikePort);
   public static DigitalInput pressureSwitch = new DigitalInput(RobotMap.pressureSwitchPort);
   public static DoubleSolenoid shiftSolenoid = new DoubleSolenoid(RobotMap.shiftSolenoidOne, RobotMap.shiftSolenoidTwo);
+
+  
+	public static Encoder leftDriveEncoder = new Encoder(RobotMap.leftDriveEncoderPortOne, RobotMap.leftDriveEncoderPortTwo);
+  public static Encoder rightDriveEncoder = new Encoder(RobotMap.rightDriveEncoderPortOne, RobotMap.rightDriveEncoderPortTwo, true);
 }
