@@ -44,5 +44,5 @@ public class OI {
 
   
 	public static Encoder leftDriveEncoder = new Encoder(RobotMap.leftDriveEncoderPortOne, RobotMap.leftDriveEncoderPortTwo);
-  public static Encoder rightDriveEncoder = new Encoder(RobotMap.rightDriveEncoderPortOne, RobotMap.rightDriveEncoderPortTwo, true);
+  public static Encoder rightDriveEncoder = new Encoder(RobotMap.rightDriveEncoderPortOne, RobotMap.rightDriveEncoderPortTwo);
 }
