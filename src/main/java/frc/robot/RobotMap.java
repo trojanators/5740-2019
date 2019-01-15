@@ -30,4 +30,3 @@ public class RobotMap {
   public static int shiftSolenoidTwo = 1;
 }
 
-}
