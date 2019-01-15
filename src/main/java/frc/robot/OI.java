@@ -24,7 +24,7 @@ import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 
 public class OI {
   public static PowerDistributionPanel pdp = new PowerDistributionPanel(RobotMap.pdpCAN);
-  public static Joystick controller = new Joystick(RobotMap.controllerPort);
+  public static Joystick controller1 = new Joystick(RobotMap.controllerPort);
 
   public static WPI_TalonSRX leftFrontDriveMotor = new WPI_TalonSRX(RobotMap.leftFrontDrivePWM);
   public static WPI_TalonSRX leftCenterDriveMotor = new WPI_TalonSRX(RobotMap.leftCenterDrivePWM);
