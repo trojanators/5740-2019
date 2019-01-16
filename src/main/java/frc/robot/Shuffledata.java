@@ -1,5 +1,8 @@
 package frc.robot;
 import frc.robot.*;
+
+import java.util.stream.Node.Builder.OfInt;
+
 import edu.wpi.first.wpilibj.shuffleboard.Shuffleboard;
 import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardLayout;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
@@ -24,14 +27,28 @@ public class Shuffledata {
        .withSize(3, 2)
        .withWidget("PDP");
         
-       Shuffleboard.getTab("Live Window")
-       .add("Drive train RPM",)
+      /* Shuffleboard.getTab("Live Window")
+       .add("Drive train RPM",OI.mag)
        .withPosition(8,4)
-       .withSize(,)
-       withWidget("")
-       
-        SmartDashboard.putData("pressure-switch", OI.pressureSwitch);
+       .withSize(2,2)
+       .withWidget("Dial");
+       */
 
+       Shuffleboard.getTab("Live Window")
+       .add("Pressure Switch",OI.pressureSwitch)
+       .withPosition(8, 3)
+       .withSize(2, 1)
+       .withWidget("Toggle Button");
+
+       /* Shuffleboard.getTab("Live Window")
+        .add("Vision".OI.Vision)
+        .withPosition(4,3)
+        .withSize(4,3)
+        .withWidget("");
+        */
+        Shuffleboard.getTab("Live Window")
+        .add("Shift"OI.shiftSolenoid)
+        
 
        // SmartDashboard.putData("Right Encoder", OI.rightDriveEncoder);
        // SmartDashboard.putData("Left Encoder", OI.leftDriveEncoder);
