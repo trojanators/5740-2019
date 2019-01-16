@@ -6,24 +6,29 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 public class Shuffledata {
 
     public static void Periodic(){
-        Shuffleboard.getTab("Live_Window")
+        Shuffleboard.getTab("Live Window")
         .add("Xbox X value",OI.controller1.getRawAxis(1))
         .withPosition(0, 1)
         .withSize(2, 1)
         .withWidget("Number Bar");
         
-        Shuffleboard.getTab("Live_Window")
+        Shuffleboard.getTab("Live Window")
         .add("Xbox Y value",OI.controller1.getRawAxis(4))
         .withPosition(0,2)
         .withSize(2, 1)
         .withWidget("Number Bar");
         
-       Shuffleboard.getTab("Live_Window")
+       Shuffleboard.getTab("Live Window")
        .add("power usage", OI.pdp)
        .withPosition(0, 3)
        .withSize(3, 2)
        .withWidget("PDP");
         
+       Shuffleboard.getTab("Live Window")
+       .add("Drive train RPM",)
+       .withPosition(8,4)
+       .withSize(,)
+       withWidget("")
        
         SmartDashboard.putData("pressure-switch", OI.pressureSwitch);
 
