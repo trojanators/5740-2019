@@ -27,16 +27,15 @@ public class Shuffledata {
        .withSize(3, 2)
        .withWidget("PDP");
         
-      /* Shuffleboard.getTab("Live Window")
-       .add("Drive train RPM",OI.mag)
-       .withPosition(8,4)
+       Shuffleboard.getTab("Live Window")
+       .add("Drive train RPM",OI.rightFrontDriveMotor)
+       .withPosition(9,4)
        .withSize(2,2)
        .withWidget("Dial");
-       */
 
        Shuffleboard.getTab("Live Window")
        .add("Pressure Switch",OI.pressureSwitch)
-       .withPosition(8, 3)
+       .withPosition(9, 3)
        .withSize(2, 1)
        .withWidget("Toggle Button");
 
@@ -46,9 +45,12 @@ public class Shuffledata {
         .withSize(4,3)
         .withWidget("");
         */
-        Shuffleboard.getTab("Live Window")
-        .add("Shift"OI.shiftSolenoid)
-        
+       /* Shuffleboard.getTab("Live Window")
+        .add("Shift"OI.shiftSolenoid.get())
+        .withPosition(9,2)
+        .withSize(2,1)
+        .withWidget("Toggle Button");
+        */
 
        // SmartDashboard.putData("Right Encoder", OI.rightDriveEncoder);
        // SmartDashboard.putData("Left Encoder", OI.leftDriveEncoder);
