@@ -43,6 +43,6 @@ public class OI {
   public static DoubleSolenoid shiftSolenoid = new DoubleSolenoid(RobotMap.shiftSolenoidOne, RobotMap.shiftSolenoidTwo);
 
   
-	public static Encoder leftDriveEncoder = new Encoder(RobotMap.leftDriveEncoderPortOne, RobotMap.leftDriveEncoderPortTwo);
-  public static Encoder rightDriveEncoder = new Encoder(RobotMap.rightDriveEncoderPortOne, RobotMap.rightDriveEncoderPortTwo);
+//	public static Encoder leftDriveEncoder = new Encoder(RobotMap.leftDriveEncoderPortOne, RobotMap.leftDriveEncoderPortTwo);
+//  public static Encoder rightDriveEncoder = new Encoder(RobotMap.rightDriveEncoderPortOne, RobotMap.rightDriveEncoderPortTwo);
 }
