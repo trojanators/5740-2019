@@ -27,7 +27,7 @@ public class Shuffledata {
        .withPosition(0, 3)
        .withSize(3, 2)
        .withWidget("PDP");
-        // rpm
+        // rpm with mag encoders 
        Shuffleboard.getTab("Live Window")
        .add("Drive train RPM",OI.rightFrontDriveMotor)
        .withPosition(9,4)
