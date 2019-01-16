@@ -8,8 +8,16 @@ public class Shuffledata {
     public static void Periodic(){
         Shuffleboard.getTab("Live_Window")
         .add("Xbox X value",OI.controller1.getRawAxis(1))
+        .withPosition(2, 0)
+        .withSize(2, 1)
+        .withWidget("Number Bar");
         
-        SmartDashboard.putNumber("Xbox X value", OI.controller1.getRawAxis(1));
+        Shuffleboard.getTab("Live_Window")
+        .add("Xbox Y value",OI.controller1.getRawAxis(4))
+        .withPosition(3,0)
+        .withSize(2, 1)
+        .withWidget();
+        
         SmartDashboard.putNumber("xbox y value", OI.controller1.getRawAxis(4));
         SmartDashboard.putData("pressure-switch", OI.pressureSwitch);
 
