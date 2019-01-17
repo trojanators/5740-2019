@@ -22,13 +22,10 @@ import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import frc.robot.OI;
 import frc.robot.*;
-/**
- * Add your docs here.
- */
+
 public class Teleop {
   // calls funtion of periotic when you run teleop periodic
     public static void Periodic(){
-   
     OI.drive.arcadeDrive(-OI.controller1.getRawAxis(1), -OI.controller1.getRawAxis(4));
     if(OI.pressureSwitch.get() == false) {
       OI.compressorSpike.set(Relay.Value.kOn);

@@ -36,6 +36,9 @@ public class Robot extends TimedRobot {
   @Override
   public void robotInit() {
     m_oi = new OI();
+    m_chooser.setDefaultOption("Default Auto", new ExampleCommand());
+    // chooser.addOption("My Auto", new MyAutoCommand());
+   Shuffledata.Periodic();
   }
 
   /**
@@ -127,7 +130,7 @@ public class Robot extends TimedRobot {
   @Override
   public void testPeriodic() {
     Scheduler.getInstance().run();
-   // Teleop.Periodic();
-    //Shuffledata.Periodic();
+ //   Teleop.Periodic();
+ //   Shuffledata.Periodic();
   }
 }
