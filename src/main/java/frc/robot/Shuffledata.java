@@ -45,12 +45,12 @@ public class Shuffledata {
         .withWidget("");
         */
         // shifter is active
-       /* \\Shuffleboard.getTab("Live Window")
-        .add("Shift"OI.shiftSolenoid.get())
+       Shuffleboard.getTab("Live Window")
+        .add("Shifting",OI.shiftSolenoid)
         .withPosition(9,2)
         .withSize(2,1)
-        .withWidget("Toggle Button");
-      */  
+        .withWidget("Boolean Box");
+        
        // SmartDashboard.putData("Right Encoder", OI.rightDriveEncoder);
        // SmartDashboard.putData("Left Encoder", OI.leftDriveEncoder);
         
