@@ -14,6 +14,7 @@ package frc.robot;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 import com.ctre.phoenix.motorcontrol.can.WPI_VictorSPX;
 
+import edu.wpi.first.wpilibj.BuiltInAccelerometer;
 import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.Encoder;
@@ -22,6 +23,7 @@ import edu.wpi.first.wpilibj.PowerDistributionPanel;
 import edu.wpi.first.wpilibj.Relay;
 import edu.wpi.first.wpilibj.SpeedControllerGroup;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
+import edu.wpi.first.wpilibj.interfaces.Accelerometer;
 
 public class OI {
   public static PowerDistributionPanel pdp = new PowerDistributionPanel(RobotMap.pdpCAN);
@@ -42,6 +44,7 @@ public class OI {
   public static DigitalInput pressureSwitch = new DigitalInput(RobotMap.pressureSwitchPort);
   public static DoubleSolenoid shiftSolenoid = new DoubleSolenoid(RobotMap.shiftSolenoidOne, RobotMap.shiftSolenoidTwo);
 
+  public static Accelerometer accelerometer= new BuiltInAccelerometer(); 
   
 //	public static Encoder leftDriveEncoder = new Encoder(RobotMap.leftDriveEncoderPortOne, RobotMap.leftDriveEncoderPortTwo);
 //  public static Encoder rightDriveEncoder = new Encoder(RobotMap.rightDriveEncoderPortOne, RobotMap.rightDriveEncoderPortTwo);

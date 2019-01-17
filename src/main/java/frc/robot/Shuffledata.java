@@ -39,7 +39,7 @@ public class Shuffledata {
        .withWidget("Toggle Button");
        // camera position
        /* Shuffleboard.getTab("Live Window")
-        .add("Vision".)
+        .add("video",)
         .withPosition(4,3)
         .withSize(4,3)
         .withWidget("");
@@ -50,6 +50,15 @@ public class Shuffledata {
         .withPosition(9,2)
         .withSize(2,1)
         .withWidget("Boolean Box");
+        // graph of robot speed 
+        Shuffleboard.getTab("Live Window")
+        .add("Accelleration graph",OI.accelerometer)
+        .withPosition(4, 1)
+        .withSize(4, 2)
+        .withWidget("Graph");
+        // 3 point acceleromitor 
+        
+
         
        // SmartDashboard.putData("Right Encoder", OI.rightDriveEncoder);
        // SmartDashboard.putData("Left Encoder", OI.leftDriveEncoder);
