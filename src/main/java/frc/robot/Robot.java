@@ -38,7 +38,7 @@ public class Robot extends TimedRobot {
     m_oi = new OI();
     m_chooser.setDefaultOption("Default Auto", new ExampleCommand());
     // chooser.addOption("My Auto", new MyAutoCommand());
-   Shuffledata.Periodic();
+   
   }
 
   /**
@@ -112,6 +112,7 @@ public class Robot extends TimedRobot {
     if (m_autonomousCommand != null) {
       m_autonomousCommand.cancel();
     }
+    Shuffledata.Periodic();
   }
 
   /**
@@ -121,7 +122,7 @@ public class Robot extends TimedRobot {
   public void teleopPeriodic() {
     Scheduler.getInstance().run();
     Teleop.Periodic();
-    Shuffledata.Periodic();
+    
   }
 
   /**

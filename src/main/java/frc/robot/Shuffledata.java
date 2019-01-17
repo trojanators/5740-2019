@@ -10,12 +10,13 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 public class Shuffledata {
 //Displays all Data Vars Preprogramed to Display on Shuffleboard Dashboard
     public static void Periodic(){
-        
+      /*  
         Shuffleboard.getTab("Live Window")
         .add("Xbox X value",OI.controller1.getRawAxis(1))
         .withPosition(0, 1)
         .withSize(2, 1)
         .withWidget(BuiltInWidgets.kNumberBar);
+        */
 // controoler y
         Shuffleboard.getTab("Live Window")
         .add("Xbox Y value",OI.controller1.getRawAxis(4))
@@ -54,7 +55,7 @@ public class Shuffledata {
         .withPosition(9,2)
         .withSize(2,1)
         .withWidget(BuiltInWidgets.kBooleanBox);
-// graph of robot speed 
+/*// graph of robot speed 
         Shuffleboard.getTab("Live Window")
         .add("Accelleration graph",OI.accelerometer)
         .withPosition(4, 1)
@@ -66,6 +67,6 @@ public class Shuffledata {
         .withPosition(9,1)
         .withSize(2,1)
         .withWidget(BuiltInWidgets.k3AxisAccelerometer);
-        
+        */
     }
 }
