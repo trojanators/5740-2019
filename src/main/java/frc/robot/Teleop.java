@@ -22,9 +22,7 @@ import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import frc.robot.OI;
 import frc.robot.*;
-/**
- * Add your docs here.
- */
+
 public class Teleop {
   // calls funtion of periotic when you run teleop periodic
     public static void Periodic(){

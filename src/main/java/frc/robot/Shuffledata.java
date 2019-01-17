@@ -1,11 +1,14 @@
 package frc.robot;
 import frc.robot.*;
+
+import java.util.stream.Stream;
+
 import edu.wpi.first.wpilibj.shuffleboard.BuiltInWidgets;
 import edu.wpi.first.wpilibj.shuffleboard.Shuffleboard;
 import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardLayout;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 public class Shuffledata {
-
+//Displays all Data Vars Preprogramed to Display on Shuffleboard Dashboard
     public static void Periodic(){
         
         Shuffleboard.getTab("Live Window")
@@ -38,7 +41,7 @@ public class Shuffledata {
        .withSize(2, 1)
        .withWidget(BuiltInWidgets.kBooleanBox);
 // camera position
-      /*  Shuffleboard.getTab("Live Window")
+     /*   Shuffleboard.getTab("Live Window")
         .add("video",)
         .withPosition(4,3)
         .withSize(4,3)
