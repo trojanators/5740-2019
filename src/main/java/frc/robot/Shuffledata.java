@@ -1,8 +1,6 @@
 package frc.robot;
 import frc.robot.*;
 
-import java.util.stream.Node.Builder.OfInt;
-
 import edu.wpi.first.wpilibj.shuffleboard.Shuffleboard;
 import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardLayout;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
@@ -41,19 +39,18 @@ public class Shuffledata {
        .withWidget("Toggle Button");
        // camera position
        /* Shuffleboard.getTab("Live Window")
-        .add("Vision".OI.Vision)
+        .add("Vision".)
         .withPosition(4,3)
         .withSize(4,3)
         .withWidget("");
         */
         // shifter is active
-       /* Shuffleboard.getTab("Live Window")
+       /* \\Shuffleboard.getTab("Live Window")
         .add("Shift"OI.shiftSolenoid.get())
         .withPosition(9,2)
         .withSize(2,1)
         .withWidget("Toggle Button");
-        */
-
+      */  
        // SmartDashboard.putData("Right Encoder", OI.rightDriveEncoder);
        // SmartDashboard.putData("Left Encoder", OI.leftDriveEncoder);
         
