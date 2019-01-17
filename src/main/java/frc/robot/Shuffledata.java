@@ -13,19 +13,19 @@ public class Shuffledata {
         .withPosition(0, 1)
         .withSize(2, 1)
         .withWidget(BuiltInWidgets.kNumberBar);
-        // controoler y
+// controoler y
         Shuffleboard.getTab("Live Window")
         .add("Xbox Y value",OI.controller1.getRawAxis(4))
         .withPosition(0,2)
         .withSize(2, 1)
         .withWidget(BuiltInWidgets.kNumberBar);
-        //power 
+//power 
        Shuffleboard.getTab("Live Window")
        .add("power usage", OI.pdp)
        .withPosition(0, 3)
        .withSize(3, 2)
        .withWidget(BuiltInWidgets.kPowerDistributionPanel);
-        // rpm with mag encoders 
+// rpm with mag encoders 
        Shuffleboard.getTab("Live Window")
        .add("Drive train RPM",OI.rightFrontDriveMotor)
        .withPosition(9,4)
@@ -37,7 +37,7 @@ public class Shuffledata {
        .withPosition(9, 3)
        .withSize(2, 1)
        .withWidget(BuiltInWidgets.kBooleanBox);
-       // camera position
+// camera position
       /*  Shuffleboard.getTab("Live Window")
         .add("video",)
         .withPosition(4,3)
@@ -45,28 +45,24 @@ public class Shuffledata {
         .withWidget(BuiltInWidgets.kCameraStream);
         */
         
-        // shifter is active
+// shifter is active
        Shuffleboard.getTab("Live Window")
         .add("Shifting",OI.shiftSolenoid)
         .withPosition(9,2)
         .withSize(2,1)
         .withWidget(BuiltInWidgets.kBooleanBox);
-        // graph of robot speed 
+// graph of robot speed 
         Shuffleboard.getTab("Live Window")
         .add("Accelleration graph",OI.accelerometer)
         .withPosition(4, 1)
         .withSize(4, 2)
         .withWidget(BuiltInWidgets.kGraph);
-        // 3 point acceleromitor 
+// 3 point acceleromitor 
         Shuffleboard.getTab("Live Window")
         .add("axis acc",OI.accelerometer)
         .withPosition(9,1)
         .withSize(2,1)
         .withWidget(BuiltInWidgets.k3AxisAccelerometer);
-
-        
-       // SmartDashboard.putData("Right Encoder", OI.rightDriveEncoder);
-       // SmartDashboard.putData("Left Encoder", OI.leftDriveEncoder);
         
     }
 }
