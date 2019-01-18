@@ -30,11 +30,13 @@ public class Shuffledata {
        .withSize(3, 2)
        .withWidget(BuiltInWidgets.kPowerDistributionPanel);
 // rpm with mag encoders 
+/*
        Shuffleboard.getTab("Test")
        .add("Drive train RPM",OI.rightFrontDriveMotor)
        .withPosition(9,4)
        .withSize(2,2)
        .withWidget(BuiltInWidgets.kDial);
+       */
 // pressure switch
        Shuffleboard.getTab("Test")
        .add("Pressure Switch",OI.pressureSwitch)
