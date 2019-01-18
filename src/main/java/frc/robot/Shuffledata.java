@@ -11,31 +11,32 @@ public class Shuffledata {
 //Displays all Data Vars Preprogramed to Display on Shuffleboard Dashboard
     public static void Periodic(){
         
-        Shuffleboard.getTab("Live Window")
+        
+        Shuffleboard.getTab("Test")
         .add("Xbox X value",OI.controller1.getRawAxis(1))
         .withPosition(0, 1)
         .withSize(2, 1)
         .withWidget(BuiltInWidgets.kNumberBar);
 // controoler y
-        Shuffleboard.getTab("Live Window")
+        Shuffleboard.getTab("Test")
         .add("Xbox Y value",OI.controller1.getRawAxis(4))
         .withPosition(0,2)
         .withSize(2, 1)
         .withWidget(BuiltInWidgets.kNumberBar);
 //power 
-       Shuffleboard.getTab("Live Window")
+       Shuffleboard.getTab("Test")
        .add("power usage", OI.pdp)
        .withPosition(0, 3)
        .withSize(3, 2)
        .withWidget(BuiltInWidgets.kPowerDistributionPanel);
 // rpm with mag encoders 
-       Shuffleboard.getTab("Live Window")
+       Shuffleboard.getTab("Test")
        .add("Drive train RPM",OI.rightFrontDriveMotor)
        .withPosition(9,4)
        .withSize(2,2)
        .withWidget(BuiltInWidgets.kDial);
 // pressure switch
-       Shuffleboard.getTab("Live Window")
+       Shuffleboard.getTab("Test")
        .add("Pressure Switch",OI.pressureSwitch)
        .withPosition(9, 3)
        .withSize(2, 1)
@@ -49,19 +50,19 @@ public class Shuffledata {
         */
         
 // shifter is active
-       Shuffleboard.getTab("Live Window")
+       Shuffleboard.getTab("Test")
         .add("Shifting",OI.shiftSolenoid)
         .withPosition(9,2)
         .withSize(2,1)
         .withWidget(BuiltInWidgets.kBooleanBox);
 // graph of robot speed 
-        Shuffleboard.getTab("Live Window")
+        Shuffleboard.getTab("Test")
         .add("Accelleration graph",OI.accelerometer)
         .withPosition(4, 1)
         .withSize(4, 2)
         .withWidget(BuiltInWidgets.kGraph);
 // 3 point acceleromitor 
-        Shuffleboard.getTab("Live Window")
+        Shuffleboard.getTab("Test")
         .add("axis acc",OI.accelerometer)
         .withPosition(9,1)
         .withSize(2,1)
