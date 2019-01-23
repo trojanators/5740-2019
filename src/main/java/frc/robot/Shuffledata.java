@@ -56,9 +56,6 @@ public class Shuffledata {
         .withPosition(9,2)
         .withSize(2,1)
         .withWidget(BuiltInWidgets.kBooleanBox);
-/*// graph of robot speed 
-        Shuffleboard.getTab("Live Window")
-
 // graph of robot speed 
         Shuffleboard.getTab("LiveWindow")
 
@@ -66,7 +63,6 @@ public class Shuffledata {
         .withPosition(4, 1)
         .withSize(4, 2)
         .withWidget(BuiltInWidgets.kGraph);
-        */
 // 3 point acceleromitor 
         Shuffleboard.getTab("LiveWindow")
         .add("axis acc",OI.accelerometer)
