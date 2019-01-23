@@ -26,12 +26,7 @@ import frc.robot.*;
 public class Teleop {
   // calls funtion of periotic when you run teleop periodic
     public static void Periodic(){
-    OI.drive.arcadeDrive(-OI.controller1.getRawAxis(1), -OI.controller1.getRawAxis(4));
-    if(OI.pressureSwitch.get() == false) {
-      OI.compressorSpike.set(Relay.Value.kOn);
-    } else {
-      OI.compressorSpike.set(Relay.Value.kOn);
-    }
+    OI.drive.arcadeDrive(-OI.controller1.getRawAxis(1), OI.controller1.getRawAxis(4));
     if(OI.controller1.getRawAxis(3) != 0) {
       OI.shiftSolenoid.set(DoubleSolenoid.Value.kForward);
       } else {

@@ -10,21 +10,20 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 public class Shuffledata {
 //Displays all Data Vars Preprogramed to Display on Shuffleboard Dashboard
     public static void Periodic(){
-        
-        
-        Shuffleboard.getTab("Test")
+
+        Shuffleboard.getTab("LiveWindow")
         .add("Xbox X value",OI.controller1.getRawAxis(1))
         .withPosition(0, 1)
         .withSize(2, 1)
         .withWidget(BuiltInWidgets.kNumberBar);
 // controoler y
-        Shuffleboard.getTab("Test")
+        Shuffleboard.getTab("LiveWindow")
         .add("Xbox Y value",OI.controller1.getRawAxis(4))
         .withPosition(0,2)
         .withSize(2, 1)
         .withWidget(BuiltInWidgets.kNumberBar);
 //power 
-       Shuffleboard.getTab("Test")
+       Shuffleboard.getTab("LiveWindow")
        .add("power usage", OI.pdp)
        .withPosition(0, 3)
        .withSize(3, 2)
@@ -38,7 +37,7 @@ public class Shuffledata {
        .withWidget(BuiltInWidgets.kDial);
        */
 // pressure switch
-       Shuffleboard.getTab("Test")
+       Shuffleboard.getTab("LiveWindow")
        .add("Pressure Switch",OI.pressureSwitch)
        .withPosition(9, 3)
        .withSize(2, 1)
@@ -52,19 +51,24 @@ public class Shuffledata {
         */
         
 // shifter is active
-       Shuffleboard.getTab("Test")
+       Shuffleboard.getTab("LiveWindow")
         .add("Shifting",OI.shiftSolenoid)
         .withPosition(9,2)
         .withSize(2,1)
         .withWidget(BuiltInWidgets.kBooleanBox);
+/*// graph of robot speed 
+        Shuffleboard.getTab("Live Window")
+
 // graph of robot speed 
-        Shuffleboard.getTab("Test")
+        Shuffleboard.getTab("LiveWindow")
+
         .add("Accelleration graph",OI.accelerometer)
         .withPosition(4, 1)
         .withSize(4, 2)
         .withWidget(BuiltInWidgets.kGraph);
+        */
 // 3 point acceleromitor 
-        Shuffleboard.getTab("Test")
+        Shuffleboard.getTab("LiveWindow")
         .add("axis acc",OI.accelerometer)
         .withPosition(9,1)
         .withSize(2,1)
