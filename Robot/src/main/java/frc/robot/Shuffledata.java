@@ -70,6 +70,5 @@ public static void Init(){
         .withPosition(4,3)
         .withSize(4,3)
         .withWidget(BuiltInWidgets.kCameraStream);
-        Shuffleboard.update();
         }
 }
