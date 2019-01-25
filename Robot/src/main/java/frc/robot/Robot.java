@@ -6,7 +6,7 @@
 /*----------------------------------------------------------------------------*/
 
 package frc.robot;
-
+import edu.wpi.first.wpilibj.shuffleboard.Shuffleboard;
 import edu.wpi.first.networktables.NetworkTable;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.command.Command;
@@ -115,7 +115,7 @@ public class Robot extends TimedRobot {
     if (m_autonomousCommand != null) {
       m_autonomousCommand.cancel();
     }
-   Shuffledata.Periodic();
+   Shuffledata.Init();
   }
 
   /**
@@ -126,6 +126,7 @@ public class Robot extends TimedRobot {
     Scheduler.getInstance().run();
     Teleop.Periodic();
     Shuffleboard.update();
+
     
   }
 

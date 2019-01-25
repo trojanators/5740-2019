@@ -7,9 +7,10 @@ import edu.wpi.first.wpilibj.shuffleboard.BuiltInWidgets;
 import edu.wpi.first.wpilibj.shuffleboard.Shuffleboard;
 import edu.wpi.first.wpilibj.shuffleboard.ShuffleboardLayout;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+import edu.wpi.first.wpilibj.DriverStation;
 public class Shuffledata {
 //Displays all Data Vars Preprogramed to Display on Shuffleboard Dashboard
-    public static void Periodic(){
+public static void Init(){
         Shuffleboard.selectTab("LiveWindow");
         Shuffleboard.getTab("LiveWindow")
         .add("Xbox X value",OI.controller1.getRawAxis(1))
@@ -65,16 +66,10 @@ public class Shuffledata {
 
 // Adds Grip output to dashboard       
         Shuffleboard.getTab("LiveWindow")
-        .add("camera",GRIP/myContoursReport/streams<="mjpg:http://10.57.40.105:1181/?action=stream" )
+        .add("camera","GRIP/myContoursReport/streams<=mjpg:http://10.57.40.105:1181/?action=stream" )
         .withPosition(4,3)
         .withSize(4,3)
         .withWidget(BuiltInWidgets.kCameraStream);
-// Detect's a brown out 
-        Shuffleboard.getTab("LiveWindow")
-        .add("Is Brownout active", DriverStation.getInstance().isSysBrownedOut())
-        .withPosition(9,1)
-        .withSize(2,1)
-        .withWidget(BuiltInWidgets.kBooleanBox);
+        Shuffleboard.update();
         }
-    }
 }

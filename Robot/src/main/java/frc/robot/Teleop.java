@@ -29,8 +29,10 @@ public class Teleop {
     OI.drive.arcadeDrive(-OI.controller1.getRawAxis(1), OI.controller1.getRawAxis(4));
     if(OI.controller1.getRawAxis(3) != 0) {
       OI.shiftSolenoid.set(DoubleSolenoid.Value.kForward);
-      } else {
+      } else 
+      {
       OI.shiftSolenoid.set(DoubleSolenoid.Value.kReverse);
     }
   }
 }
+
