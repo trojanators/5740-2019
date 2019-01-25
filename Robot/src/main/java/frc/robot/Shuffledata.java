@@ -16,6 +16,7 @@ public class Shuffledata {
         .withPosition(0, 1)
         .withSize(2, 1)
         .withWidget(BuiltInWidgets.kNumberBar);
+        
 // controoler y
         Shuffleboard.getTab("LiveWindow")
         .add("Xbox Y value",OI.controller1.getRawAxis(4))
@@ -42,13 +43,6 @@ public class Shuffledata {
        .withPosition(9, 3)
        .withSize(2, 1)
        .withWidget(BuiltInWidgets.kBooleanBox);
-// camera position
-      Shuffleboard.getTab("Live Window")
-        .add("video","/CameraPublisher/PiCamera/streams=mjpg:http://10.57.40.105:1181/?action=stream")
-        .withPosition(4,3)
-        .withSize(4,3)
-        .withWidget(BuiltInWidgets.kCameraStream);
-        
 // shifter is active
        Shuffleboard.getTab("LiveWindow")
         .add("Shifting",OI.shiftSolenoid)
@@ -68,6 +62,12 @@ public class Shuffledata {
         .withPosition(9,1)
         .withSize(2,1)
         .withWidget(BuiltInWidgets.k3AxisAccelerometer);
-        
+
+// Adds Grip output to dashboard       
+        Shuffleboard.getTab("LiveWindow")
+        .add("camera",GRIP/myContoursReport/streams<="mjpg:http://10.57.40.105:1181/?action=stream" )
+        .withPosition(4,3)
+        .withSize(4,3)
+        .withWidget(BuiltInWidgets.kCameraStream);
     }
 }
