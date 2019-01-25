@@ -1,17 +1,13 @@
 <grip:Pipeline>
   <sources>
-    <grip:ImageFile>
-      <property name="path" value="C:\Users\robotics\Documents\GitHub\5740-2019\Vision\GRIP\7.75.jpg"/>
-    </grip:ImageFile>
-    <grip:ImageFile>
-      <property name="path" value="C:\Users\robotics\Documents\GitHub\5740-2019\Vision\GRIP\12.jpg"/>
-    </grip:ImageFile>
-    <grip:ImageFile>
-      <property name="path" value="C:\Users\robotics\Documents\GitHub\5740-2019\Vision\GRIP\24.jpg"/>
-    </grip:ImageFile>
-    <grip:ImageFile>
-      <property name="path" value="C:\Users\robotics\Documents\GitHub\5740-2019\Vision\GRIP\36.jpg"/>
-    </grip:ImageFile>
+    <grip:MultiImageFile>
+      <property name="numImages" value="4"/>
+      <property name="path[0]" value="C:\Users\robotics\Documents\GitHub\5740-2019\5740-2019\Vision\GRIP\7.75.jpg"/>
+      <property name="path[1]" value="C:\Users\robotics\Documents\GitHub\5740-2019\5740-2019\Vision\GRIP\12.jpg"/>
+      <property name="index" value="2"/>
+      <property name="path[2]" value="C:\Users\robotics\Documents\GitHub\5740-2019\5740-2019\Vision\GRIP\24.jpg"/>
+      <property name="path[3]" value="C:\Users\robotics\Documents\GitHub\5740-2019\5740-2019\Vision\GRIP\36.jpg"/>
+    </grip:MultiImageFile>
   </sources>
   <steps>
     <grip:Step name="HSV Threshold">
@@ -96,7 +92,7 @@
       </grip:Input>
       <grip:Output step="3" socket="0" previewed="true"/>
     </grip:Step>
-    <grip:Step name="NTPublish ContoursReport">
+    <grip:Step name="HTTP Publish ContoursReport">
       <grip:Input step="4" socket="0"/>
       <grip:Input step="4" socket="1">
         <value>myContoursReport</value>
@@ -123,14 +119,6 @@
   </steps>
   <connections>
     <grip:Connection>
-      <grip:Output step="3" socket="0" previewed="true"/>
-      <grip:Input step="4" socket="0"/>
-    </grip:Connection>
-    <grip:Connection>
-      <grip:Output step="0" socket="0" previewed="true"/>
-      <grip:Input step="1" socket="0"/>
-    </grip:Connection>
-    <grip:Connection>
       <grip:Output step="2" socket="0" previewed="true"/>
       <grip:Input step="3" socket="0"/>
     </grip:Connection>
@@ -138,11 +126,23 @@
       <grip:Output step="1" socket="0" previewed="true"/>
       <grip:Input step="2" socket="0"/>
     </grip:Connection>
+    <grip:Connection>
+      <grip:Output source="0" socket="0" previewed="false"/>
+      <grip:Input step="0" socket="0"/>
+    </grip:Connection>
+    <grip:Connection>
+      <grip:Output step="3" socket="0" previewed="true"/>
+      <grip:Input step="4" socket="0"/>
+    </grip:Connection>
+    <grip:Connection>
+      <grip:Output step="0" socket="0" previewed="true"/>
+      <grip:Input step="1" socket="0"/>
+    </grip:Connection>
   </connections>
   <settings>
-    <teamNumber>0</teamNumber>
-    <publishAddress>roboRIO-0-FRC.local</publishAddress>
-    <deployAddress>roboRIO-0-FRC.local</deployAddress>
+    <teamNumber>5740</teamNumber>
+    <publishAddress>roboRIO-5740-FRC.local</publishAddress>
+    <deployAddress>roboRIO-5740-FRC.local</deployAddress>
     <deployDir>/home/lvuser</deployDir>
     <deployUser>lvuser</deployUser>
     <deployJavaHome>/usr/local/frc/JRE/</deployJavaHome>
