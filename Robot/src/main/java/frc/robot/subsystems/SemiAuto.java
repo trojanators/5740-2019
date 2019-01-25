@@ -16,6 +16,7 @@ import edu.wpi.first.networktables.NetworkTableEntry;
 
 /**
  * Add your docs here.
+ * SemiAuto is Great
  */
 public class SemiAuto {
   public static Integer TARGET_DISTANCE = 1000;
