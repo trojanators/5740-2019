@@ -69,5 +69,12 @@ public class Shuffledata {
         .withPosition(4,3)
         .withSize(4,3)
         .withWidget(BuiltInWidgets.kCameraStream);
+// Detect's a brown out 
+        Shuffleboard.getTab("LiveWindow")
+        .add("Is Brownout active", DriverStation.getInstance().isSysBrownedOut())
+        .withPosition(9,1)
+        .withSize(2,1)
+        .withWidget(BuiltInWidgets.kBooleanBox);
+        }
     }
 }

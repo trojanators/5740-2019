@@ -32,5 +32,6 @@ public class Teleop {
       } else {
       OI.shiftSolenoid.set(DoubleSolenoid.Value.kReverse);
     }
+     if(OI.controller1.getRawAxis)
   }
 }
