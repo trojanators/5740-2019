@@ -10,7 +10,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 public class Shuffledata {
 //Displays all Data Vars Preprogramed to Display on Shuffleboard Dashboard
     public static void Periodic(){
-
+        Shuffleboard.selectTab("LiveWindow");
         Shuffleboard.getTab("LiveWindow")
         .add("Xbox X value",OI.controller1.getRawAxis(1))
         .withPosition(0, 1)
