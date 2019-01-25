@@ -39,7 +39,7 @@ public class Robot extends TimedRobot {
   public void robotInit() {
     m_oi = new OI();
     m_chooser.setDefaultOption("Default Auto", new ExampleCommand());
-    
+    Shuffledata.Init();
     // chooser.addOption("My Auto", new MyAutoCommand());
    
   }
@@ -115,7 +115,7 @@ public class Robot extends TimedRobot {
     if (m_autonomousCommand != null) {
       m_autonomousCommand.cancel();
     }
-   Shuffledata.Init();
+   
   }
 
   /**

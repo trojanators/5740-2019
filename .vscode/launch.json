@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SemiAuto",
+            "request": "launch",
+            "mainClass": "frc.robot.subsystems.SemiAuto",
+            "projectName": "Robot_"
+        }
+    ]
+}
