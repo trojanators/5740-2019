@@ -26,8 +26,8 @@ public class RobotMap {
 
   public static int compressorSpikePort = 0;
   public static int pressureSwitchPort = 0;
-  public static int shiftSolenoidOne = 0;
-  public static int shiftSolenoidTwo = 1;
+  public static int shiftSolenoidOne = 1;
+  public static int shiftSolenoidTwo = 2;
   
   public static final Integer leftDriveEncoderPortOne = 0;
 	public static final Integer leftDriveEncoderPortTwo = 1;

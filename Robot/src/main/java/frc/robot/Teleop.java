@@ -28,9 +28,9 @@ public class Teleop {
     public static void Periodic(){
       System.out.println("Teleop Active");
     OI.drive.arcadeDrive(-OI.controller1.getRawAxis(1), OI.controller1.getRawAxis(4));
-    if(OI.controller1.getRawAxis(3) != 0) {
+    if(OI.controller1.getRawAxis(3) > 0) {
       OI.shiftSolenoid.set(DoubleSolenoid.Value.kForward);
-      } else {
+      } else if(OI.controller1.getRawAxis(2) >0) {
       OI.shiftSolenoid.set(DoubleSolenoid.Value.kReverse);
     }
   }
