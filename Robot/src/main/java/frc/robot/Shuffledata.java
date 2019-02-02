@@ -1,4 +1,4 @@
-package frc.robot;
+/*package frc.robot;
 import frc.robot.*;
 
 import java.util.stream.Stream;
@@ -37,7 +37,7 @@ public static void Init(){
        .withPosition(9,4)
        .withSize(2,2)
        .withWidget(BuiltInWidgets.kDial);
-       */
+       
 // pressure switch
        Shuffleboard.getTab("LiveWindow")
        .add("Pressure Switch",OI.pressureSwitch)
@@ -72,3 +72,4 @@ public static void Init(){
         .withWidget(BuiltInWidgets.kCameraStream);
         }
 }
+*/
